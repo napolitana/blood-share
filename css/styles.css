@@ -1,0 +1,477 @@
+@font-face {
+    font-family: 'yellowtailregular';
+    src: url('fonts/yellowtail-webfont.woff2') format('woff2'),
+         url('fonts/yellowtail-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url('fonts/Raleway-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway-Semibold';
+    src: url('fonts/Raleway-Semibold.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url('fonts/Raleway-Light.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300&display=swap');
+
+
+hr{
+  margin-top: 70px;
+  clear: both;
+}
+
+body{
+  background-color: #f3f5f7;
+  overflow-x: hidden;
+  margin: 0;
+
+}
+
+.d-flex{
+  display: flex;
+}
+
+.f-wrap{
+  flex-wrap: wrap;
+}
+
+.f-nowrap{
+  flex-wrap: nowrap;
+}
+
+.s-between{
+  justify-content: space-between;
+}
+
+.j-end{
+  justify-content: flex-end;
+}
+
+.a-center{
+  align-items: center;
+}
+
+/*ESTILOS NAVBAR*/
+
+.navbar{
+  height: 80px;
+  background-color: #FFF;
+  box-shadow: 0 2px 2px 0 rgba(119, 119, 119, 0.02), 0 3px 1px -2px rgba(73, 76, 76, 0.06), 0 1px 5px 0 rgba(0, 0, 0, 0.02);
+}
+
+a.navbar-brand{
+  color: #a52a2a;
+}
+
+.navbar a{
+  color: #000;
+}
+
+a#agendarDoacao {
+    color: #a52a2a;
+    font-weight: 500;
+}
+
+a#condicoesParaDoar{
+  font-weight: 500;
+}
+
+.navbar.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: inherit;
+}
+.navbar[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+
+.fixed-top{
+  z-index: 1060;
+}
+
+/*ESTILOS SEÇÃO PRINCIPAL*/
+
+.main, .main-adm{
+  margin-top: 130px; /* Deixar responsivo */
+}
+
+.main h1{
+  color: #a52a2a;
+  font-size: 4rem;
+  font-family: 'yellowtailregular';
+}
+
+.main-text{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.main-text p{
+  text-indent: 25px;
+  color: #000;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+.row.btn-main-section {
+    text-align: center;
+    line-height: 100px;
+    display: block;
+}
+
+.steps h2{
+    font-size: 5rem;
+    font-family: 'yellowtailregular';
+    color: #a52a2a;
+    text-align: center;
+}
+
+.steps h3{
+  text-align: center;
+}
+
+.row.btn-main-section a{
+	background-color: #a52a2a;
+	text-indent:0;
+	width: 225px;
+  color: #FFF;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+/*ESTILOS CADASTRO ALUNO*/
+
+.cadastro{
+  margin-top: 30px;
+  padding: 25px 15px 0 35px;
+}
+
+.cadastro h2{
+  color: #a52a2a;
+  font-size: 3.5rem;
+  font-family: 'yellowtailregular';
+  margin-bottom: 50px;
+}
+
+.cadastro-form form{
+  margin-top: 20px;
+}
+
+.cadastro label{
+  color: #000;
+}
+
+.cadastro .text-muted{
+  color: #f7a7a7!important;
+}
+
+/* ESTILOS RAZÕES PARA DOAR */
+.reasons{
+  margin-top: 30px;
+}
+
+.reasons img{
+  margin-bottom: 1.25rem;
+}
+
+.reasons h4{
+  padding-top: 25px;
+  text-align: center;
+  font-family: 'yellowtailregular';
+  color: #a52a2a;
+  font-size: 3.5rem;
+  margin-bottom: 60px;
+}
+
+.reasons span{
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+
+.reasons p{
+  margin-top: 1.25rem;
+}
+
+/* ESTULOS FOOTER */
+.border-blood{
+  margin-top: 90px;
+  padding: 30px 0 20px 0;
+  background-color: #a52a2a;
+}
+
+.border-blood h3{
+  color: #fff;
+  font-size: 1rem;
+}
+
+.border-blood ul{
+  padding-left: 0;
+}
+
+.border-blood ul li{
+  list-style: none;
+  color: #d4adad;
+}
+
+.border-blood ul li a{
+  color: #d4adad;
+}
+
+.border-blood i{
+  padding-right: 10px;
+}
+
+#map{
+  height: 250px;
+}
+
+/*------------------------------------ PAINEL ADMINISTRADOR ------------------------------------*/
+.login{
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-img img{
+  height: 100vh;
+  width: 50vw;
+}
+
+form.div{
+  width: 100%;
+}
+
+.hold-form{
+  padding: 25px;
+  /* border: 1px solid #7eaa9d; */
+}
+
+.form-login{
+  width: 50vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-login h1{
+  font-size: 30px;
+  color: #555;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-family: Raleway-Light;
+  margin: 0;
+  /* padding-bottom: 32px; */
+}
+
+.form-login span{
+  font-size: 13px;
+  font-family: Raleway-Semibold;
+  color: #555;
+  line-height: 1.4;
+  text-transform: uppercase;
+  padding-bottom: 11px;
+}
+
+.form-login input{
+  font-family: Raleway-Semibold;
+  color: #555;
+  line-height: 1.2;
+  font-size: 18px;
+  height: 55px;
+  width: 100%;
+  padding: 0 25px;
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  margin-bottom: 36px;
+}
+
+.form-login input:focus{
+  border: 1px solid #7eaa9d;
+  transition: border, 1s;
+  outline: 0;
+}
+
+input.btn-entrar{
+    font-family: Raleway-Medium;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 150px;
+    height: 55px;
+    background-color: #c30d24;
+    border-radius: 27px;
+}
+
+input.btn-entrar:hover{
+  background-color: #e0223a;
+  transition: background, 0.5s;
+}
+
+.login-title{
+  margin-bottom: 32px;
+  font-family: Raleway-Light;
+}
+
+.login-title div{
+  width: 150px;
+  background-color: #7eaa9d;
+  padding: 1px;
+}
+
+.main-adm .title {
+  padding-bottom: 30px;
+}
+
+.enviar-email{
+  padding-top: 20px;
+}
+
+/* DATA TABLE */
+
+.main-adm{
+  font: 90%/1.45em "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif !important;
+  border: 1px solid #00000033;
+  padding: 20px;
+}
+
+ [type=search]{
+  -webkit-appearance: searchfield;
+  border: 1px solid #cfd3d6
+}
+
+table input[type="search"]{
+  outline: none;
+  border: none;
+  -webkit-appearance: inherit!important;
+}
+
+table.dataTable thead th, table.dataTable thead td{
+  border-bottom: none;
+}
+
+table.dataTable tfoot th, table.dataTable tfoot td {
+    border-top: none;
+}
+
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc{
+  background-image: none;
+}
+
+/* MEDIA */
+
+@media (max-width: 768px) {
+  .main h1 {
+    font-size: 2.5rem;
+  }
+
+  .main p{
+    padding: 0 15px;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .mobile h2{
+    font-size: 1rem;
+    font-family: inherit;
+    padding-right: 10px;
+  }
+  .mobile h3{
+    font-size: 1rem;
+  }
+
+  .know{
+    display: none;
+  }
+
+  .reasons h4{
+    font-size: 2.5rem;
+  }
+
+  .reasons img{
+    display: none;
+  }
+
+  .reasons .col-md-4.col-sm-12.col-xs-12{
+    padding-bottom: 20px;
+  }
+
+  hr{
+    margin-top: 20px;
+  }
+
+  .cadastro h2{
+    font-size: 2.5rem;
+  }
+
+  .form-mobile{
+    display: block;
+  }
+
+  .form-pc{
+    display: none;
+  }
+
+  .login-img{
+    display: none!important;
+  }
+
+  .form-login{
+    width: 100vw;
+  }
+
+  div#tabela-doadores_info {
+    display: none;
+  }
+
+ .hr-footer-mobile{
+   display: none;
+ }
+
+ .reasons small{
+   display: none;
+ }
+
+ small.fonte{
+   display: block;
+ }
+
+}
+
+@media (min-width: 769px){
+  .mobile{
+    display: none;
+  }
+  .form-mobile{
+    display: none;
+  }
+
+  .form-pc{
+    display: block;
+  }
+
+
+  iframe{
+    display: none;
+  }
+
+
+}
